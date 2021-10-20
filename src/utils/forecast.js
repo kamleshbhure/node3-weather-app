@@ -12,6 +12,7 @@ const forecast = (longitude, lattitude, callback) => {
                 temperature: body.current.temperature,
                 feelslike: body.current.feelslike,
                 weather_desc: body.current.weather_descriptions[0],
+                humidity: body.current.humidity,
             }
             callback(undefined, data)
         }
